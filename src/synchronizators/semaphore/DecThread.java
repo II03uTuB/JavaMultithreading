@@ -22,15 +22,11 @@ class DecThread implements Runnable {
             for(int i = 0; i < 5; i++) {
                 Resourse.counter--;
                 System.out.println(name + ": " + Resourse.counter);
-
-                // Разрешить, если возможно, переключение контекста
                 Thread.sleep(10);
             }
         } catch (InterruptedException exc) {
             System.out.println(exc);
         }
-
-        // освободить разрешение
         System.out.println("Поток " + name + " освобождает разрешение");
         semaphore.release();
     }
