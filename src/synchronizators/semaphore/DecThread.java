@@ -24,8 +24,8 @@ class DecThread implements Runnable {
                 System.out.println(name + ": " + Resourse.counter);
                 Thread.sleep(10);
             }
-        } catch (InterruptedException exc) {
-            System.out.println(exc);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
         System.out.println("Поток " + name + " освобождает разрешение");
         semaphore.release();
