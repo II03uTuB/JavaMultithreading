@@ -15,7 +15,7 @@ public class IncThread implements Runnable {
 
     @Override
     public void run() {
-
+        System.out.println("Запуск потока " + name);
         try {
             System.out.println("Поток " + name + "ожидает разрешение");
             semaphore.acquire();
