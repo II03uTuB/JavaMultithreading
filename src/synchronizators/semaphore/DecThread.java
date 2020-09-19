@@ -7,7 +7,7 @@ class DecThread implements Runnable {
     String name;
     Semaphore semaphore;
 
-    DecThread(Semaphore s, String n) {
+    DecThread(String n, Semaphore s) {
         semaphore = s;
         name = n;
         new Thread(this).start();
