@@ -7,13 +7,6 @@ public class PrintZeroEvenOdd {
 
     public PrintZeroEvenOdd(int n) {
         this.n = n;
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                zero();
-            }
-        })
-
     }
 
 
@@ -32,7 +25,6 @@ public class PrintZeroEvenOdd {
     public static void main(String[] args) {
         int n = 32;
         PrintZeroEvenOdd print  = new PrintZeroEvenOdd(n);
-        print.
 
     }
 }
