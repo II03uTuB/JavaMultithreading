@@ -10,13 +10,4 @@ public  class LeetArray {
         }
         return -1;
     }
-
-
-    public static void main(String[] args) {
-        int[] mas = {1,7,3,6,5,6,22};
-        int[] mas2 = {-1,-1,-1,-1,-1,-1};
-        int[] mas3 = {-1,-1,-1,0,1,1};
-        int[] mas4 = {-1,-1,0,0,-1,-1};
-        System.out.println(pivotIndex(mas4));
-    }
 }
