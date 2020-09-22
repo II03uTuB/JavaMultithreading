@@ -2,11 +2,11 @@ package synchronizators.leetcode;
 
 import java.util.concurrent.Semaphore;
 
-public class Foo {
+public class PrintInOrder {
     private Semaphore semaphore1 = new Semaphore(0);
     private Semaphore semaphore2 = new Semaphore(0);
 
-    public Foo() {
+    public PrintInOrder() {
     }
 
     public void first(Runnable printFirst) throws InterruptedException {
@@ -26,7 +26,7 @@ public class Foo {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        Foo foo = new Foo();
+        PrintInOrder foo = new PrintInOrder();
         foo.first(() -> System.out.println("first"));
         foo.second(() -> System.out.println("second"));
         foo.third(() -> System.out.println("third"));
