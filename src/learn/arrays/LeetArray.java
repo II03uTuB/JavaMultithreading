@@ -1,4 +1,4 @@
-package synchronizators.leetcode.learn;
+package learn.arrays;
 
 public  class LeetArray {
     public static int pivotIndex(int[] nums) {

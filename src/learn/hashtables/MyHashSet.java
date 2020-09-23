@@ -1,6 +1,5 @@
-package synchronizators.leetcode.learn;
+package learn.hashtables;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MyHashSet {

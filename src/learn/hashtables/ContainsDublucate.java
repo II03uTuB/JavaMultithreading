@@ -1,4 +1,4 @@
-package synchronizators.leetcode.learn;
+package learn.hashtables;
 
 public class ContainsDublucate {
     public static boolean containsDuplicate(int[] nums) {

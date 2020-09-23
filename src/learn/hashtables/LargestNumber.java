@@ -1,4 +1,4 @@
-package synchronizators.leetcode.learn;
+package learn.hashtables;
 
 public class LargestNumber {
     public static int dominantIndex(int[] nums) {
